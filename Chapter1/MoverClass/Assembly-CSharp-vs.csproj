@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{B61260F1-D3B2-B521-5D39-3E4379109436}</ProjectGuid>
+	<ProjectGuid>{4B3AD952-BF9F-C2D1-78D0-1BC8CD22EE9C}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,10 +44,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Mover\moverClass.js" />
-     <Compile Include="Assets\cameraC.js" />
-     <Compile Include="Assets\fpsClass.js" />
-     <Compile Include="Assets\mainGameSetup.js" />
+     <Compile Include="Assets\cameraControl.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
