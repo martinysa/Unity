@@ -4,7 +4,6 @@
 var m : GameObject;
 var arr = new Array ();
 
-private var isTouchDevice : boolean = false;
 
 private var o: GameObject;
 private var other : moverClass;
@@ -31,8 +30,7 @@ function Start () {
 
 function LateUpdate(){
 	
-	handleCamera();
-	
+		
 	for(var i= 0; i<arr.length; i++){
 	//for (var o: GameObject in arr){
 		o = arr[i];
@@ -44,21 +42,5 @@ function LateUpdate(){
 		other.run();
 		
 	}
-}
-
-function handleCamera(){
-	var clickDetected : boolean;
-    var touchPosition : Vector3;
- 
-    // Detect click and calculate touch position
-    if (isTouchDevice) {
-        clickDetected = (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
-        touchPosition = Input.GetTouch(0).position;
-    } else {
-        clickDetected = (Input.GetMouseButtonDown(0));
-        touchPosition = Input.mousePosition;
-    }
-    
-
 }
 

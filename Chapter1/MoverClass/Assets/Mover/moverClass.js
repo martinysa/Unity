@@ -32,10 +32,13 @@ function run() {
 	velocity +=acceleration;
 	position += velocity;
 	
+	Debug.DrawLine(Vector3(0,0,0), position, Color.red);
 	
 	transform.position = position;
 	
 	acceleration *= 0;
+	
+	
 
 }
 

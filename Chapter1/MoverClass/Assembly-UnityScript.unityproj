@@ -46,6 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\Mover\moverClass.js" />
      <Compile Include="Assets\cameraC.js" />
+     <Compile Include="Assets\cameraTouchBehavior.js" />
      <Compile Include="Assets\fpsClass.js" />
      <Compile Include="Assets\mainGameSetup.js" />
   </ItemGroup>
