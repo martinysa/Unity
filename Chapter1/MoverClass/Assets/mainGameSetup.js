@@ -9,12 +9,8 @@ private var o: GameObject;
 private var other : moverClass;
 
 
-function Awake() {
-    if (Application.platform == RuntimePlatform.IPhonePlayer) 
-        isTouchDevice = true; 
-    else
-        isTouchDevice = false; 
-}
+
+
 
 function Start () {
 	m = GameObject.Find("Mover");
@@ -35,6 +31,7 @@ function LateUpdate(){
 	//for (var o: GameObject in arr){
 		o = arr[i];
 		other = o.GetComponent(moverClass);
+		//other = new moverClass();
 		
 		// Call the function DoSomething on the script
 		other.applyForce(Vector3(Random.Range(-0.001,0.001),0.0,Random.Range(-0.0001,0.0001)));

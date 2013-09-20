@@ -9,9 +9,14 @@
 
 	private var isTouchDevice : boolean = false;
 
-	function Awake(){
-		// Override me!
+	function Awake() {
+    	if (Application.platform == RuntimePlatform.IPhonePlayer) 
+        	isTouchDevice = true; 
+    	else
+        	isTouchDevice = false; 
 	}
+	
+	
 
 	function Start () {
 
