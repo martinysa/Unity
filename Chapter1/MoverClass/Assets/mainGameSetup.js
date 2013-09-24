@@ -11,9 +11,13 @@ private var attractorObject: GameObject;
 private var attractorC: attractorClass;
 
 
+<<<<<<< HEAD
 function Awake(){
 	Application.targetFrameRate = 60;
 }
+=======
+
+>>>>>>> 56eefde45713619d15ef3942b1cd07304252519b
 
 function Start () {
 	Screen.orientation = ScreenOrientation.LandscapeLeft;
@@ -42,6 +46,7 @@ function LateUpdate(){
 		o = arr[i];
 		// get component for invoke function (mover)
 		other = o.GetComponent(moverClass);
+		//other = new moverClass();
 		
 		var force: Vector3 = attractorC.attract(other);
    		other.applyForce(force);
