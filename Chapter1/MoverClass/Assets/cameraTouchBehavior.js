@@ -1,7 +1,7 @@
 ﻿#pragma strict
 	
 	
-
+	var guiLog: GUIText;
 	// The ID of the touch that began the scroll.
    var ScrollTouchID: int = -1;
    // The position of that initial touch
@@ -9,9 +9,13 @@
 
 	private var isTouchDevice : boolean = false;
 
-	function Awake(){
-		// Override me!
+	function Awake() {
+		if (Application.platform == RuntimePlatform.IPhonePlayer) 
+			isTouchDevice = true; 
+		else
+			isTouchDevice = false; 
 	}
+
 
 	function Start () {
 
@@ -25,6 +29,7 @@
     	{
         	Debug.Log(myTouches[i].position);
         	Debug.Log(i);
+        	guiLog.text = myTouches[i].position.x + " : " + myTouches[i].position.y;
     	}	
 	}
 

@@ -1,15 +1,17 @@
 ﻿//Class Mover
 
 
-private var position: Vector3;
-private var velocity: Vector3;
-private var acceleration: Vector3;
+var position: Vector3;
+var velocity: Vector3;
+var acceleration: Vector3;
+var mass: float;
 
 
 function Start () {
-	position = Vector3(0,.5,0);
-	velocity = Vector3(0,0,0);
+	position = Vector3(Random.Range(.5,5),Random.Range(.5,5),Random.Range(.5,5));
+	velocity = Vector3(Random.Range(.01,.1),Random.Range(.01,.1),Random.Range(.01,.1));
 	acceleration = Vector3(0,0,0);
+	mass = .1;
 	transform.position = position;
 }
 
@@ -25,7 +27,7 @@ function applyForce(force:Vector3){
 
 function run() {
 
-	checkPlane();
+	//checkPlane();
 
 	//acceleration = Vector3(Random.Range(-0.001,0.001), 0,Random.Range(-0.001,0.001));
 
