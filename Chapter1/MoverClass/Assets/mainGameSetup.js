@@ -11,13 +11,13 @@ private var attractorObject: GameObject;
 private var attractorC: attractorClass;
 
 
-<<<<<<< HEAD
+
 function Awake(){
 	Application.targetFrameRate = 60;
 }
-=======
 
->>>>>>> 56eefde45713619d15ef3942b1cd07304252519b
+
+
 
 function Start () {
 	Screen.orientation = ScreenOrientation.LandscapeLeft;
@@ -60,4 +60,3 @@ function LateUpdate(){
 		
 	}
 }
-

@@ -8,7 +8,7 @@ var mass: float;
 
 
 function Start () {
-	position = Vector3(Random.Range(.5,5),Random.Range(.5,5),Random.Range(.5,5));
+	position = Vector3(Random.Range(-4,5),Random.Range(-4,5),Random.Range(-4,5));
 	velocity = Vector3(Random.Range(.01,.1),Random.Range(.01,.1),Random.Range(.01,.1));
 	acceleration = Vector3(0,0,0);
 	mass = .1;

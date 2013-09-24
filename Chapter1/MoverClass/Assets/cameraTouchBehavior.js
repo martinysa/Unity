@@ -10,17 +10,16 @@
 	private var isTouchDevice : boolean = false;
 
 	function Awake() {
-<<<<<<< HEAD
 		if (Application.platform == RuntimePlatform.IPhonePlayer) 
 			isTouchDevice = true; 
 		else
 			isTouchDevice = false; 
-=======
+
     	if (Application.platform == RuntimePlatform.IPhonePlayer) 
         	isTouchDevice = true; 
     	else
         	isTouchDevice = false; 
->>>>>>> 56eefde45713619d15ef3942b1cd07304252519b
+
 	}
 	
 	
