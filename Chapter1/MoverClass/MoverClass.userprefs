@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Attractor/attractorClass.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/cameraTouchBehavior.js">
     <Files>
-      <File FileName="Assets/cameraTouchBehavior.js" Line="22" Column="1" />
-      <File FileName="Assets/mainGameSetup.js" Line="63" Column="1" />
-      <File FileName="Assets/Mover/moverClass.js" Line="11" Column="73" />
+      <File FileName="Assets/cameraTouchBehavior.js" Line="74" Column="119" />
+      <File FileName="Assets/mainGameSetup.js" Line="43" Column="28" />
+      <File FileName="Assets/cameraC.js" Line="43" Column="13" />
       <File FileName="Assets/Attractor/attractorClass.js" Line="25" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
